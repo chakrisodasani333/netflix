@@ -1,0 +1,172 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+     background-color: black;
+}
+header{
+    background-image: url(spiderman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navbar{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px 50px;
+       flex-wrap: wrap;
+       border: 2px solid black;
+       box-shadow: 5px 5px 5px black;
+       background: rgba(255, 255, 255,0.3);
+       backdrop-filter: blur(10px);
+       border-radius: 10px;
+       position: sticky;
+       top: 0;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+nav a
+{
+transition: all 0.3s ease;
+}
+nav a:hover
+{
+color:rgb(236, 40, 40);
+font-size: larger;
+}
+.logo{
+    height: 40px;
+    width: 180px;
+}
+button{
+    height: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.img{
+    height: 25px;
+    width: 25px;
+    gap: none;
+    border-radius: 6px;
+}
+.in{
+    height: 25px;
+    color: red;
+    background: transparent;
+}
+.lang{
+    height: 25px;
+    width: 65px;
+    text-decoration: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    background: transparent;
+}
+.down{
+    margin-top: 550px;
+    margin-left: 50px;
+    font-size: 2rem;
+}
+main{
+    color: white;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    transition: 0.3s ease;
+}
+.images{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    
+}
+img:hover{
+    transform: scale(1.06);
+}
+@media (max-width: 768px) {
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .down{
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 200px;
+  }
+
+  input{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .logo{
+    width: 120px;
+  }
+}
+.footer {
+  background-color: #000;
+  color: #757575;
+  padding: 50px 15%;
+  font-family: Arial, sans-serif;
+}
+
+.footer-title {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+  color: #757575;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}
