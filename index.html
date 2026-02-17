@@ -4,37 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NETFLIX</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="netflix.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <img src="netflix-logo.jpeg" alt="Netflix Logo" class="logo">
-            <a href="netflix.html">Home</a>
-            <a href="#">TV Shows</a>
-            <a href="#">Movies</a>
-            <a href="#">New & Popular</a>
-            <a href="#">Mylist</a>
-            <input type="text" id="input" placeholder="Enter ...">
-            <button><img src="search.jpeg" class="img"></button>
-            <select class="lang">
-                <option>English</option>
-                <option>Telugu</option>
-                <option>Hindi</option>
-            </select>
-            <button class="in">Sign In</button>
-        </nav>
-        <section class="down">
-            <div class="play">
-                <button><h3>▶  Play</h3></button>
-            </div>
-            <div class="info">
-                <button><h3>More info</h3></button>
-            </div>
-        </section>
-    </header>
+   <header>
+    <nav class="navbar">
+        <div class="logo">NETFLIX</div>
+        <button class="menu" onclick="display()">Menu</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">New & Popular</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+    </nav>
+</header>
     <main>
         <section class="popular">
            <div><h2><storng>Popular</strong></h2></div> 
@@ -154,5 +141,6 @@
 
   </div>
 </footer>
+<script src="netflix.js"></script>
 </body>
 </html>
